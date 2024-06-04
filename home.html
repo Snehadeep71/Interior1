@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="home.html" class="logo"><i class="ri-store-line"></i>FurnishMe</a>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line"></div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+    </header>
+
+    <!-- header section ends  -->
+
+
+    <!-- closer btn  -->
+    <div id="closer" class="ri-close-line"></div>
+
+    <!-- navbar start  -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!-- navbar end  -->
+
+
+    <!-- shopping cart start  -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="ri-close-line close-icon"></i>
+            <img src="image/cart-img-1.jpg" alt="image_not_available">
+            <div class="content">
+                <h3>Modern Furniture</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> 5000 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="ri-close-line close-icon"></i>
+            <img src="image/cart-img-2.jpg" alt="image_not_available">
+            <div class="content">
+                <h3>Modern Furniture</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> 5000 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="ri-close-line close-icon"></i>
+            <img src="image/cart-img-3.jpg" alt="image_not_available">
+            <div class="content">
+                <h3>Modern Furniture</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> 5000 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="ri-close-line close-icon"></i>
+            <img src="image/cart-img-4.jpg" alt="image_not_available">
+            <div class="content">
+                <h3>Modern Furniture</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> 5000 </span>
+            </div>
+        </div>
+        <h3 class="total"> total: <span>2500</span></h3>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+    <!-- shopping cart end  -->
+
+
+    <!-- login form start  -->
+    <div class="login-form">
+        <form action="#">
+            <h3>Login Form</h3>
+            <input type="email" placeholder="Enter Your Email" class="box">
+            <input type="passowrd" placeholder="Enter Your Passowrd" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>Forget password? <a href="#">Create Now</a></p>
+        </form>
+    </div>
+    <!-- login form end  -->
+
+
+    <!-- home section starts  -->
+    <section class="home">
+        <div class="slide-container">
+            <div class="slide active">
+                <div class="content">
+                    <span>New Arrivals</span>
+                    <h3>Flexible Chair</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolores mollitia. Sed sequi rem temporibus, maxime natus ratione unde commodi reiciendis similique dolores dolorum itaque animi officiis fugit numquam sint!</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-1.png" alt="image_not_available">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <span>New Arrivals</span>
+                    <h3>Flexible Chair</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolores mollitia. Sed sequi rem temporibus, maxime natus ratione unde commodi reiciendis similique dolores dolorum itaque animi officiis fugit numquam sint!</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-2.png" alt="image_not_available">
+                </div>
+            </div>
+        </div>
+      
+        
+        <div id="slide-next" onclick="next()" class="ri-arrow-right-line"></div>
+        <div id="slide-prev" onclick="prev()" class="ri-arrow-left-line"></div>
+    </section>
+
+    <!-- home section ends -->
+
+
+    <!-- banner section starts  -->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="image/banner-1.jpg" alt="image_not_available">
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% off</h3>
+                <a href="#" class="btn"> Shop Now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="image/banner-2.jpg" alt="image_not_available">
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% off</h3>
+                <a href="#" class="btn"> Shop Now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="image/banner-3.jpg" alt="image_not_available">
+            <div class="content">
+                <span>Limited Offer</span>
+                <h3>Upto 50% off</h3>
+                <a href="#" class="btn"> Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
+
+
+
+
+
+
+    <!-- footer section start  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="home.html"><i class="ri-arrow-right-line">Home</i></a>
+                <a href="shop.html"><i class="ri-arrow-right-line">shop</i></a>
+                <a href="about.html"><i class="ri-arrow-right-line">about</i></a>
+                <a href="team.html"><i class="ri-arrow-right-line">team</i></a>
+                <a href="blog.html"><i class="ri-arrow-right-line">blog</i></a>
+                <a href="contact.html"><i class="ri-arrow-right-line">contact</i></a>
+            </div>
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="ri-arrow-right-line">My Order</i></a>
+                <a href="#"><i class="ri-arrow-right-line">My Wishlist</i></a>
+                <a href="#"><i class="ri-arrow-right-line">My Account</i></a>
+                <a href="#"><i class="ri-arrow-right-line">My Favourite</i></a>
+                <a href="#"><i class="ri-arrow-right-line">Terms of User</i></a>
+                
+            </div>
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="ri-facebook-fill">My Order</i></a>
+                <a href="#"><i class="ri-twitter-fill">My Wishlist</i></a>
+                <a href="#"><i class="ri-instagram-fill">My Account</i></a>
+                <a href="#"><i class="ri-linkedin-box-fill">My Favourite</i></a>
+                <a href="#"><i class="ri-pinterest-fill">Terms of User</i></a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for Latest News</p>
+                <form action="#">
+                    <input type="email" name="" placeholder="Enter Your Email" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="credit">
+        Created by Saraf Worldwide| All Rights Reserved
+    </section>
+    <!-- footer section end  -->
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
