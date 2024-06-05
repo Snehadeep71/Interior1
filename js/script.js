@@ -10,6 +10,14 @@ document.querySelector('#menu-btn').onclick=()=>{
     closer.style.display='block';
     navbar.classList.toggle('active');
 }
+function showSpecifications(id) {
+    var specs = document.getElementById(id);
+    if (specs.style.display === "none") {
+        specs.style.display = "block";
+    } else {
+        specs.style.display = "none";
+    }
+}
 let cart=document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick=()=>{
     closer.style.display='block';
